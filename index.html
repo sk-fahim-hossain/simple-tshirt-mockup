@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="welcome-text">
+        <h2>Print Your Dream in Tshirt</h2>
+      </section>
+      <section class="parent">
+        <!-- left side -->
+        <div class="left-side">
+          <div>
+            <input type="file" name="file" id="file" accept="image/*" />
+          </div>
+
+          <!-- adasd   -->
+          <div class="border">
+            <div id="child" class="child">
+              <div class="tshirt-container" id="main-container">
+                <img src="./thisrt.jpg" class="tshirt" alt="" />
+
+                <img src="" id="image-tag" class="inputed-image" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="dwnld-btn" onclick="handleTakePic()">
+              Download Image
+            </button>
+          </div>
+        </div>
+        <div>
+          <h1 class="left-arrow">
+            <span class="left-arrow">→</span>
+          </h1>
+        </div>
+        <!-- right side -->
+        <div id="maker" class="child-two">
+          <h3>First insert an Image</h3>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

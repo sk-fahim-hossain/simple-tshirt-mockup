@@ -1,0 +1,135 @@
+main {
+  height: 100vh;
+}
+
+.border {
+  border: 1px dashed slategray;
+  padding: 10px;
+}
+.left-arrow {
+  font-size: 98px;
+  color: rgb(210, 30, 210);
+  transition: 0.5s ease-in;
+}
+.left-arrow :hover {
+  text-shadow: 2px 20px 10px gray;
+}
+input::file-selector-button {
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  background: rgb(210, 30, 210);
+}
+.welcome-text {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(210, 30, 210);
+}
+.btn-container {
+  text-align: center;
+}
+.dwnld-btn {
+  font-size: 28px;
+  padding: 5px 16px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(210, 30, 210);
+  border-radius: 7px;
+  border: none;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+.dwnld-btn:hover {
+  transform: scale(1.1);
+}
+.child {
+  width: 400px;
+  height: 488px;
+  background: transparent;
+}
+.child-two {
+  border: 2px dashed rgb(210, 30, 210);
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 500px;
+  box-shadow: 7px 9px 15px rgba(204, 204, 204, 0.377);
+  padding: 30px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.left-side {
+  box-shadow: 8px 8px 10px rgba(223, 223, 223, 0.295);
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgb(239, 241, 240);
+}
+.tshirt-container {
+  overflow: none;
+  position: relative;
+  height: fit-content;
+}
+
+.tshirt {
+  width: 100%;
+  position: absolute;
+}
+.inputed-image {
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(155%, 135%);
+}
+.file {
+  background: #000;
+  padding: 4px 6px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .child {
+    width: 98%;
+    height: 360px;
+    background: transparent;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .welcome-text {
+    font-size: 1.2rem;
+  }
+  .inputed-image {
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(100%, 135%);
+  }
+  .left-arrow {
+    display: none;
+  }
+  .child-two {
+    width: 98%;
+  }
+}
