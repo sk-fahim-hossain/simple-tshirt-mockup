@@ -124,7 +124,7 @@ input::file-selector-button {
     width: 100px;
     height: 100px;
     position: absolute;
-    transform: translate(100%, 135%);
+    transform: translate(80%, 115%);
   }
   .left-arrow {
     display: none;
